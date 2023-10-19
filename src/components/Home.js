@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { useNavigate } from 'react-router-dom';
 import Display from "./Display";
 import FileUpload from "./FileUpload";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import StoreModal from "./StoreModal.js";
 
 // import Upload from '../artifacts/contracts/Upload.sol/Upload.json';

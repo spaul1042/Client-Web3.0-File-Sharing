@@ -4,7 +4,6 @@ import "./Modal.css";
 const Modal = ({ setModalOpen, contract, id, address }) => {
   const [state , setState] = useState(false);
   const sharing = async () => {
-    const address = document.querySelector(".address").value;
     setState(true);
     await contract.approveBuyRequest(id);
     setState(false);

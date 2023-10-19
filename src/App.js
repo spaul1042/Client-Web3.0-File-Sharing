@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import "./App.css";
 import Home from "./components/Home.js";
 import ShareAccess from "./components/ShareAccess.js";

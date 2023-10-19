@@ -5,12 +5,8 @@ import { useNavigate } from "react-router-dom";
 import Modal from "./Modal.js";
 
 const ShareAccess = ({ Account, Contract, Provider }) => {
-  const testBuyRequests = [
-    { id: 0, user: "test", dealAmount: "0.01", closed: true },
-    { id: 1, user: "test2", dealAmount: "0.01", closed: false },
-  ];
+  
   const [buyRequests, setBuyRequests] = useState([]);
-  const [buyRequestsJSX, setBuyRequestsJSX] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [id, setId] = useState(null);
   const [address, setAddress] = useState(null);
@@ -42,7 +38,7 @@ const ShareAccess = ({ Account, Contract, Provider }) => {
         ></Modal>
       )}
 
-      <a
+      <div
         className="butt"
         onClick={() => {
           navigate("/");
@@ -50,7 +46,7 @@ const ShareAccess = ({ Account, Contract, Provider }) => {
       >
         {" "}
         Back to Home{" "}
-      </a>
+      </div>
 
       <div className="buy-request-list">
         <div className="header">

@@ -1,7 +1,7 @@
 // 20000000000000000
 import React from "react";
 import { ethers } from "ethers";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Modal.css";
 
 const StoreModal = ({ setModalOpen, contract, account }) => {

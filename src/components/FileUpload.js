@@ -1,9 +1,7 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import "./FileUpload.css";
-const JWT =
-"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJhN2E3NTY3Ny0zNzkxLTRiMjUtYjM5NC05NWU3NzQ5MjE5YTIiLCJlbWFpbCI6InRvdG9ucGF1bDczQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImlkIjoiRlJBMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfSx7ImlkIjoiTllDMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSJ9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiI4NDliNTBiMDU2Mzg5MmE0ZmQ3ZCIsInNjb3BlZEtleVNlY3JldCI6IjEzNGZhMTIyMzczM2Y5Mjk1MmI0ZGZiNzc1ZDVmYzI2MTFlNTRkM2U0NDE1ZjkyMzJhYWJmZGY3MTMxMWY5N2IiLCJpYXQiOjE2OTYzMzgzMTF9.0GO6zxQGRwjrCP5Nx7Z9HdS1tdVcWz4BrxD9sXdV430"
 
 const FileUpload = ({ Account, Contract, Provider }) => {
   const [file, setFile] = useState(null);
