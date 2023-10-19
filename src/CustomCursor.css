@@ -1,0 +1,12 @@
+/* CustomCursor.css */
+
+.snake-cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000; /* Color of the cursor */
+    border-radius: 50%;
+    transition: transform 0.15s ease-in-out; /* Smooth movement transition */
+    pointer-events: none; /* Prevent cursor from interfering with clicks */
+  }
+  
