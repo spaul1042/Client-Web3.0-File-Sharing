@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import "./FileUpload.css";
+require('dotenv').config();
 
 const FileUpload = ({ Account, Contract, Provider }) => {
   const [file, setFile] = useState(null);
@@ -12,11 +13,11 @@ const FileUpload = ({ Account, Contract, Provider }) => {
     e.preventDefault();
     setDisableUpload(true);
     setFileName("Uploading");
+    console.log()
     if (file) {
       try {
         const formData = new FormData();
         formData.append("file", file);
-        console.log(file);
         // pinata api call
       
         const resFile = await axios({
@@ -24,8 +25,8 @@ const FileUpload = ({ Account, Contract, Provider }) => {
           url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: process.env.API_KEY,
-            pinata_secret_api_key: process.env.SECRET_KEY,
+            pinata_api_key: process.env.REACT_APP_API_KEY,
+            pinata_secret_api_key: process.env.REACT_APP_SECRET_KEY,
             "Content-Type": "multipart/form-data",
           },
         });
