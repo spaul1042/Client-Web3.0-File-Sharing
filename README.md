@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-
+REACT_APP_API_KEY = "849b50b0563892a4fd7d"
+REACT_APP_SECRET_KEY = "134fa1223733f92952b4dfb775d5fc2611e54d3e4415f9232aabfdf71311f97b"
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
