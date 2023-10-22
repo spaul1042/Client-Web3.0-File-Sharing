@@ -62,7 +62,7 @@ const Store = ({ Account, Contract, Provider }) => {
             >
               <div className="request-info">
                 <div className="user-info">
-                  <span className="txt">user {request.id + 1} : {request.add} , </span>
+                  <span className="txt">user {(request.id).toString()} : {request.add} , </span>
                 </div>
                 <div className="deal-amount">
                   <span className="txt">Data length : {request.lenOfData.toString()} </span>
