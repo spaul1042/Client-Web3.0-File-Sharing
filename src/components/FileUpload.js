@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const FileUpload = ({ Account, Contract, Provider }) => {
   const [file, setFile] = useState(null);
-  const [fileName, setFileName] = useState("No image Selected");
+  const [fileName, setFileName] = useState("No file Selected");
   const [disableUpload, setDisableUpload] = useState(true);
 
   const handleSubmit = async (e) => {
@@ -34,8 +34,8 @@ const FileUpload = ({ Account, Contract, Provider }) => {
         console.log(resFile.data);
         const ImgHash = `https://gateway.pinata.cloud/ipfs/${resFile.data.IpfsHash}`;
         await Contract.add(Account, ImgHash);
-        alert("Image Successfully upoaded to IPFS using Pinata key");
-        setFileName("No Image Selected");
+        alert("File Successfully upoaded");
+        setFileName("No File Selected");
         setFile(null);
       } catch (err) {
         alert(err);
@@ -62,7 +62,7 @@ const FileUpload = ({ Account, Contract, Provider }) => {
     <div className="top">
       <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="file-upload" className="choose">
-          Choose image
+          Choose file!
         </label>
         <input
           disabled={!Account}

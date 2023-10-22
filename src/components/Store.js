@@ -21,8 +21,8 @@ const Store = ({ Account, Contract, Provider }) => {
 
   useEffect(() => {
     const usersList = async () => {
-    //   const  data = await Contract.displayUsers();
-    const data = [{add: "test1", id:0, lenOfData: 1}, {add: "test2", id:1, lenOfData: 10}, {add: "test3", id:2, lenOfData: 3}]
+      const  data = await Contract.displayUsers();
+    // const data = [{add: "test1", id:0, lenOfData: 1}, {add: "test2", id:1, lenOfData: 10}, {add: "test3", id:2, lenOfData: 3}]
       setUsers(data);
     };
     Contract && usersList();
