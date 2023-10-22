@@ -22,7 +22,7 @@ function Home({Account, Contract, Provider}) {
   };
 
   const handleStoreButton = ()=> {
-    setModalOpen(true);
+    navigate('/store')
   };
 
   return (
@@ -37,15 +37,16 @@ function Home({Account, Contract, Provider}) {
       <button className="share" onClick={handleShareButton}>
           Share
       </button>
+      <div className="head">{Account ? Account : "Not connected"}</div>
       
       
       </div>
      
       <div className="App">
-      <div className ="acc" style={{ color: "black" }}>
-          Account : {Account ? Account : "Not connected"}
+      <div className ="acc" style={{ color: "white", fontSize:50 }}>
+          Web3.0 File Sharing!
       </div>
-      <h1 style={{ color: "white" }}>Web3.0 File Sharing</h1>
+     
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>

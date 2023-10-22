@@ -1,0 +1,110 @@
+body{
+    background-color: lightblue;
+  }
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #007bff; /* Set the text color to blue */
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buy-request-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buy-request {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .request-info {
+    flex: 1;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .closed {
+    background-color: red;
+  }
+  
+  .open {
+    background-color: green;
+  }
+  
+  .share-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .deal-amount {
+    display: inline;
+    /* background-color: rgb(rgba(0, 119, 255, 0.749), green, blue); Background color for the dealAmount */
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+    /* border: 2px solid #007bff; Border for the dealAmount */
+  }
+  
+  .user-info {
+    display: inline;
+    /* background-color: grey; Background color for the user */
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+    /* border: 2px solid #009900; Border for the user */
+  }
+  .acc{
+    color: darkgoldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .butt {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffa200; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underlines from links */
+    border: none; /* Remove the default button border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-align: center;
+  }
+  
+  .butt:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  .null-center {
+    /* margin:auto; */
+    margin-top: 20px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+  }
+  
+  .txt{
+    color: black;
+  }
+  
+  

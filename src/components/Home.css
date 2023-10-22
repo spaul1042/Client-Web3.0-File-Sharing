@@ -181,6 +181,24 @@ p {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+.head{
+  /* padding: 16px;
+  margin: 10px; */
+  vertical-align: center;
+  display:inline;
+  font-size: small;
+  font-weight:600;
+  /* background: #f44336;  */
+  /* width: 70px;
+  height: 45px;
+  color: white;
+  border: none;
+  border-radius: 4px; */
+  /* font-size: 13px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1; */
+}
+
 .acc {
   color: black;
   font-size: 22px;

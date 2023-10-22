@@ -4,10 +4,9 @@ import { ethers } from "ethers";
 import { useState } from "react";
 import "./Modal.css";
 
-const StoreModal = ({ setModalOpen, contract, account }) => {
+const StoreModal = ({ setModalOpen, contract, id, address }) => {
   const [buyState, setBuyState] = useState(false);
   const buy = async () => {
-    const address = document.querySelector(".address").value;
     setBuyState(true);
     // Fetch the length from the contract
     const len = await contract.displayDataLength(address);
@@ -41,6 +40,8 @@ const StoreModal = ({ setModalOpen, contract, account }) => {
               type="text"
               className="address"
               placeholder="Enter Address"
+              value = {address}
+              disabled
             ></input>
           </div>
 

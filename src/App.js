@@ -4,6 +4,7 @@ import { Routes, Route} from 'react-router-dom';
 import "./App.css";
 import Home from "./components/Home.js";
 import ShareAccess from "./components/ShareAccess.js";
+import Store from "./components/Store.js";
 import { ethers } from "ethers";
 import Upload from "./artifacts/contracts/Upload.sol/Upload.json";
 
@@ -66,6 +67,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home Account ={Account} Contract ={Contract} Provider ={Provider} />} />
         <Route path="/shareaccess" element={<ShareAccess Account = {Account} Contract ={Contract} Provider ={Provider} />} />
+        <Route path="/store" element={<Store Account = {Account} Contract ={Contract} Provider ={Provider} />} />
       </Routes>
     </div>
   );
