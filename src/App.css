@@ -1,6 +1,45 @@
 .App {
   text-align: center;
 }
+.connect {
+  /* Add a fixed position */
+  position: fixed;
+  top: 20px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  /* Rest of your button styles */
+  padding: 10px;
+  margin: 10px;
+  background: #f44336;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  /* color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1; */
+}
+.store {
+  /* display:block; */
+  padding: 16px;
+  margin: 10px;
+  vertical-align: center;
+  background: #f44336;
+  width: 70px;
+  height: 45px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1;
+}
+
+  .connect:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
 
 /* .App-logo {
   height: 40vmin;

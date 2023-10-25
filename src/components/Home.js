@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 import Display from "./Display";
 import FileUpload from "./FileUpload";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import StoreModal from "./StoreModal.js";
 
 // import Upload from '../artifacts/contracts/Upload.sol/Upload.json';
@@ -27,9 +27,7 @@ function Home({Account, Contract, Provider}) {
 
   return (
     <div>
-      {modalOpen && (
-        <StoreModal setModalOpen={setModalOpen} contract={Contract} account ={Account}></StoreModal>
-      )}
+  
       <div className="container">
       <button className="store" onClick={handleStoreButton}>
           Buy

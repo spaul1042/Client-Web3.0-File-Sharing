@@ -26,7 +26,7 @@ const ShareAccess = ({ Account, Contract, Provider }) => {
     };
     Contract && buyRequestList();
 
-  });
+  }, [Account]);
   return (
     <>
       {modalOpen && (
