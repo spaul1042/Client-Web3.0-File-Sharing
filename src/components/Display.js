@@ -1,13 +1,15 @@
 import React from "react";
 import { useState } from "react";
 import "./Display.css";
+// require('dotenv').config();
+
 const Display = ({ Contract, Account }) => {
+  const GATEWAY = "https://emerald-leading-landfowl-64.mypinata.cloud/ipfs"
   const [data, setData] = useState("");
   const getdata = async () => {
     let dataArray = [];
     let chk = false;
     const Otheraddress = document.querySelector(".address").value;
-    console.log(Otheraddress);
     try {
       if (Otheraddress) {
         // console.log(Account);
@@ -34,19 +36,7 @@ const Display = ({ Contract, Account }) => {
       console.log(str_array);
       const images = str_array.map((item, i) => {
         return (
-          // <a href={item} key={i} target="_blank">
-          //   {console.log(`https://gateway.pinata.cloud/ipfs/${item.substring(34)}`)}
-          //   <img
-          //     key={i}
-          //     // src={`https://gateway.pinata.cloud/ipfs/${item.substring(34)}`}
-          //     src={`ipfs/${item.substring(34)}`}
-          //     // src = {`${item}`}
-          //     // src = {"ipfs/QmSCtVDst1eiWaYAs6QuYwyn4yuPUT4caX5bmExnQy5FLy"}
-          //     alt={`ipfs/${item.substring(34)}`}
-          //     className="image-list"
-          //   ></img>
-          // </a>
-          <div onClick={() => window.open(`https://gateway.pinata.cloud/ipfs/${item.substring(34)}`, '_blank')}>
+          <div onClick={() => window.open(`${GATEWAY}/${item.substring(34)}`, '_blank')}>
             <div className="blur-block">
 
               <div className="link">{`ipfs/click Me!😀`}</div>
